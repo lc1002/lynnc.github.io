@@ -1,0 +1,8 @@
+---
+title: "About Me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+Hey, I'm Lynn and I'm really excited to start my journey at Columbia University Mailman School of Public Health. Previously I was at a retail pharmacy for two years, and I realized the amazing and friendly company culture here, which made me excited to come to Capsule. Outside of work, I'm a puzzle lover, architecture enthusiast, and tea addict. I enjoy my time building Legos and micro bricks, taking walks, love trying new restaurants/foods.
