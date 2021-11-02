@@ -6,4 +6,50 @@ output:
     toc_float: true
 ---
 
-This page is about making some plotly examples. 
+```{r setup, include = FALSE}
+library(tidyverse)
+library(p8105.datasets)
+
+library(plotly)
+
+data("rest_inspec")
+```
+
+
+```{r}
+restaurant = 
+  rest_inspec %>%
+  mutate(boro = str_to_title(boro),
+         cuisine_description = recode(cuisine_description, "CafÃ©/Coffee/Tea" = "Cafe/Coffee/Tea", "Latin (Cuban, Dominican, Puerto Rican, South & Central American)" = "Latin", "Bottled beverages, including water, sodas, juices, etc." = "Bottled beverages")) %>% 
+  select(boro, cuisine_description, dba, inspection_date, inspection_type, grade, grade_date, zipcode, violation_code, violation_description, score) %>% 
+  drop_na(grade,score)
+```
+
+
+```{r, warning=FALSE}
+restaurant %>% 
+  filter(cuisine_description != "Not Listed/Not Applicable") %>% 
+  mutate(cuisine = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(y = ~score, color = ~cuisine, type = "box") %>% 
+  layout(title = "Scores by different cuisines", xaxis = list(title = "Cuisines"), yaxis = list(title = "Score"))
+```
+
+
+```{r}
+restaurant %>%
+plot_ly(x = ~inspection_date, y = ~score, type = "scatter", mode = "markers",
+    color = ~boro,alpha = .5) %>% 
+    layout( xaxis = list(title = "Inspection Date"), yaxis = list(title = "Score"))
+```
+
+
+```{r}
+restaurant %>%
+  filter(cuisine_description != "Not Listed/Not Applicable") %>%
+  count(cuisine_description) %>%
+  mutate(cuisine = fct_reorder(cuisine_description, n)) %>%
+  plot_ly(x = ~ cuisine, y = ~ n, color = ~cuisine_description, type = "bar", colors = "viridis") %>% 
+  layout(title = "Number of cuisine restaurants in Manhattan", xaxis = list(title = "Cuisines"), yaxis = list(title = "Count"))
+```
+
+
