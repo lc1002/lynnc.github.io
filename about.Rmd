@@ -5,4 +5,33 @@ output:
     toc: true
     toc_float: true
 ---
-Hey, I'm Lynn and I'm really excited to start my journey at Columbia University Mailman School of Public Health. Previously I was at a retail pharmacy for two years, and I realized the amazing and friendly company culture here, which made me excited to come to Capsule. Outside of work, I'm a puzzle lover, architecture enthusiast, and tea addict. I enjoy my time building Legos and micro bricks, taking walks, love trying new restaurants/foods.
+
+### Education 
+
+* Columbia University, New York, NY <br>
+Master of Science in Biostatistics <br>
+Expected Graduation Date: May 2023 <br>
+
+
+* Baruch College, New York, NY <br>
+Bachelor of Arts in Mathematics | Minor: Economics <br>
+Date Awarded May 2020 <br>
+Honors: Magna cum laude, Sigma Alpha Delta Honor Society (Spring 2018 - Spring 2020) <br>
+Awards: Dean’s List (5 Semesters), Guardian Life Actuarial Science Awards (2019) <br>
+
+### Work Experience 
+
+* Capsule Corporation, New York, NY <br>
+Data Processing Associate <br>
+January 2021 – Present
+
+* CAS Student Central Summer Program, Remote <br>
+Intern <br>
+June 2020 - August 2020 <br>
+
+* CUNY Tutor Corps, New York, NY
+Mathematics Tutor <br>
+January 2020 - May 2020 <br>
+
+
+#### Here's a file of my [Resume](Resume.pdf).

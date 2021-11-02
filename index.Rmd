@@ -1,0 +1,24 @@
+---
+title: "Lynn Chen"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+
+<font size="5"> Hey! `r emo::ji("smile")` </font>  <br> 
+<font size="5"> This is Lynn. </font>  <br> 
+
+I am a Student in the MS Biostatistics Program at Columbia University Mailman School of Public Health and I am super excited to start my new journey here. <br> 
+
+<font size="4"> **Hobbies and Interests:**  </font> 
+I'm a puzzle lover, architecture enthusiast, and tea addict. I enjoy my time building Legos and micro bricks, taking walks, love trying new restaurants/foods. I also like photography. 
+
+
+<font size="4"> Here's a photo that I really like.  </font>
+
+<img src="image/westlight.jpg" alt="logo" style="width:60%"><br>
+
+
